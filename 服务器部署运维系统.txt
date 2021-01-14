@@ -37,6 +37,7 @@ yum install-y postgresql95-server postgresql95-contrib
 systemctl enable postgresql-9.5.service
 systemctl start postgresql-9.5.service
 su - postgres
+psql -U postgres
 ```
 ALTER USER postgres WITH PASSWORD 'abc123';
 CREATE USER oms WITH PASSWORD '123456';
